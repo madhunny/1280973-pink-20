@@ -1,0 +1,129 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+}
+
+.nav__logo-link {
+  color: @bg-white;
+  &:hover {
+    color: @bg-red;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
+}
+
+.nav__logo {
+  margin-left: -60px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+
+  .glass-tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: initial;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+  .glass-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+  }
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: @shadow-menu;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    box-shadow: none;
+  }
+}
+
+.nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
+
+.nav__button {
+  width: 50px;
+  height: 24px;
+  background-image: url("../img/svg/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.nav__item {
+  padding: 20px 0;
+  box-shadow: @shadow-menu;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 41px;
+    padding-right: 41px;
+    box-shadow: none;
+
+    &:last-child {
+      // padding-right: 0;
+    }
+  }
+}
+
+.nav__link {
+  color: @txt-white;
+  font-weight: @fw-bold;
+  text-transform: @txt-upper;
+  font-size: @fs-medium;
+  line-height: 32px;
+}

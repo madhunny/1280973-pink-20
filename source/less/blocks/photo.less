@@ -1,0 +1,84 @@
+.photo {
+  background-color: @bg-grey;
+
+  @media (max-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 49.1%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32.5%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.photo__image {
+  line-height: 0;
+  width: 100%;
+  height: auto;
+}
+
+.photo__massage {
+  padding: 0 17px;
+}
+
+.photo__name {
+  font-size: @fs-small;
+  line-height: @lh-medium;
+  font-weight: @fw-bold;
+  color: @txt-dark;
+  margin: 25px 0 0;
+}
+
+.photo__time {
+  font-size: @fs-xs;
+  line-height: @lh-medium;
+  font-weight: @fw-light;
+  color: @txt-dark;
+  text-transform: @txt-upper;
+  margin: 0 auto;
+}
+
+.photo__text {
+  font-size: @fs-small;
+  line-height: @lh-medium;
+  color: @txt-dark;
+  margin: 0 auto;
+}
+
+.photo__likes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 0 17px;
+  margin-bottom: 20px;
+}
+
+.photo__icon {
+  fill: @fill-red;
+  margin-right: 19px;
+}
+
+.photo__likes-text {
+  font-size: @fs-xs;
+  line-height: @lh-medium;
+  text-transform: @txt-upper;
+  color: @txt-red;
+  margin: 15px 0 28px;
+}

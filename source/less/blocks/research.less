@@ -1,0 +1,69 @@
+.research {
+  padding-bottom: 110px;
+
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: @bg-grey;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+.research__wrapper {
+  position: relative;
+  padding-left: 50%;
+  text-align: left;
+  padding-top: 114px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    display: block;
+    width: 100%;
+    height: 345px;
+    background-image: url("../img/svg/icon-timer.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40%;
+  }
+}
+
+.research__title {
+  font-size: @fs-xl;
+  line-height: 36px;
+  font-weight: @fw-bold;
+  color: @txt-black;
+
+  @media (min-width: @desktop-width) {
+    line-height: @lh-large;
+  }
+}
+
+.research__description {
+  font-size: @fs-small;
+  line-height: @lh-medium;
+  margin-right: 10px;
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-medium;
+    line-height: @lh-large;
+  }
+}
+
+.research__link {
+  font-size: @fs-small;
+  line-height: @lh-medium;
+  color: @txt-red;
+  text-decoration: underline;
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-medium;
+    line-height: @lh-large;
+  }
+}
