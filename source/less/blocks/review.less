@@ -1,0 +1,54 @@
+.review {
+  padding: 20px 0;
+}
+
+.review__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.review__text {
+  font-size: @fs-small;
+  line-height: @lh-large;
+
+  @media (min-width: @tablet-width) {
+    font-size: @fs-medium;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-medium;
+    margin: 0 105px;
+  }
+}
+
+.review__name {
+  font-size: @fs-medium;
+  line-height: @lh-large;
+  color: @txt-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-large;
+  }
+}
+
+.review__age {
+  font-size: @fs-small;
+  line-height: @lh-large;
+
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-medium;
+  }
+}
+
+.slider {
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+.contacts {
+  padding: 20px 0;
+}
+
+.contacts__question {
+  font-size: @fs-large;
+  font-weight: @fw-light;
+  line-height: @lh-large;
+  color: @txt-dark;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: @fs-xxl;
+    line-height: normal;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-xxxl;
+    margin: 0 120px;
+  }
+}
+
+.contacts__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 20px;
+  }
+}
+
+.contacts__item {
+  @media (min-width: @desktop-width) {
+    width: 33%;
+  }
+}
+
+.contacts__item:last-child {
+  @media (min-width: @desktop-width) {
+    order: -1;
+  }
+}
+
+.contacts__title {
+  font-size: @fs-medium;
+  line-height: normal;
+  margin: 0 auto;
+  margin-top: 23px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 34px;
+  }
+}
+
+.contacts__link {
+  color: @txt-red;
+  font-size: @fs-large;
+  font-weight: @fw-light;
+  line-height: normal;
+}

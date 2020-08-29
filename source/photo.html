@@ -2,13 +2,351 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пинк</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page">
+
+  <header class="header">
+    <nav class="nav">
+      <div class="wrapper nav__wrapper">
+        <div class="nav__menu">
+          <a class="nav__logo" href="./index.html">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/svg/logo-pink-white-tablet.svg">
+              <source media="(min-width: 1200px)" srcset="./img/svg/logo-pink-white-desktop.svg">
+              <img class="nav__logo-image" src="./img/svg/logo-pink-white-mobile.svg" width="75px" height="22px"
+                alt="Logo Pink">
+            </picture>
+          </a>
+          <button class="nav__button" type="button"></button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item ">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="./photo.html">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://up.htmlacademy.ru/adaptive/19">HTML
+              Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 
+  <main>
+    <section class="top">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Pink life</h2>
+        <h2 class="top__headline top__headline--other">Фотографии пользователей</h2>
+      </div>
+    </section>
+
+
+
+    <section class="gallery">
+      <div class="gallery__panorama panorama">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Panorama</h2>
+          <h2 class="panorama__headline">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+            хватает ваших?
+          </h2>
+        </div>
+        <div class="panorama__image-wrap">
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/panorama-tablet@1x.jpg, ./img/gallery/tablet/panorama-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/panorama-desktop@1x.jpg, ./img/gallery/desktop/panorama-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/panorama-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/panorama-mobile@2x.jpg 2x" width="320px" height="137px"
+              alt="Panorama of the day">
+          </picture>
+          <span class="panorama__image-text">Панорама дня</span>
+        </div>
+        <div class="wrapper">
+          <div class="panorama__massage">
+            <p class="panorama__name">Анна<span class="panorama__time"> (5 минут назад)</span></p>
+            <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <div class="panorama__likes">
+              <svg class="panorama__icon" fill="currentColor" version="1.0" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99"
+                enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <g>
+                  <path
+                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                </g>
+              </svg>
+              <p class="panorama__likes-text">Нравится: <span>215</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper gallery__wrapper">
+        <article class="gallery__item photo">
+          <h2 class="visually-hidden">Pohoto1</h2>
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/photo-car-tablet@1x.jpg, ./img/gallery/tablet/photo-car-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/photo-car-desktop@1x.jpg, ./img/gallery/desktop/photo-car-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/photo-car-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/photo-car-mobile@2x.jpg 2x" width="280px" height="180px" alt="Car">
+          </picture>
+          <div class="photo__massage">
+            <p class="photo__name">Левон<span class="photo__time"> (5 часов назад)</span></p>
+            <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </div>
+          <div class="photo__likes">
+            <svg class="photo__icon" fill="currentColor" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px"
+              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+              </g>
+            </svg>
+            <p class="photo__likes-text">Нравится: <span>356</span></p>
+          </div>
+        </article>
+
+        <article class="gallery__item photo">
+          <h2 class="visually-hidden">Pohoto2</h2>
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/photo-drumset-tablet@1x.jpg, ./img/gallery/tablet/photo-drumset-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/photo-drumset-desktop@1x.jpg, ./img/gallery/desktop/photo-drumset-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/photo-drumset-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Drumset">
+          </picture>
+          <div class="photo__massage">
+            <p class="photo__name">Антон<span class="photo__time"> (12 часов назад)</span></p>
+            <p class="photo__text">Соседи будут рады!</p>
+          </div>
+          <div class="photo__likes">
+            <svg class="photo__icon" fill="currentColor" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px"
+              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+              </g>
+            </svg>
+            <p class="photo__likes-text">Нравится: <span>666</span></p>
+          </div>
+        </article>
+
+        <article class="gallery__item photo">
+          <h2 class="visually-hidden">Pohoto3</h2>
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/photo-window-tablet@1x.jpg, ./img/gallery/tablet/photo-window-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/photo-window-desktop@1x.jpg, ./img/gallery/desktop/photo-window-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/photo-window-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Window">
+          </picture>
+          <div class="photo__massage">
+            <p class="photo__name">Борис<span class="photo__time"> (20 часов назад)</span></p>
+            <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном</p>
+          </div>
+          <div class="photo__likes">
+            <svg class="photo__icon" fill="currentColor" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px"
+              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+              </g>
+            </svg>
+            <p class="photo__likes-text">Нравится: <span>215</span></p>
+          </div>
+        </article>
+
+        <article class="gallery__item photo">
+          <h2 class="visually-hidden">Pohoto4</h2>
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/photo-fair-tablet@1x.jpg, ./img/gallery/tablet/photo-fair-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/photo-fair-desktop@1x.jpg, ./img/gallery/desktop/photo-fair-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/photo-fair-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/photo-fair-mobile@2x.jpg 2x" width="280px" height="180px" alt="Fair">
+          </picture>
+          <div class="photo__massage">
+            <p class="photo__name">Сергей<span class="photo__time"> (25 часов назад)</span></p>
+            <p class="photo__text">Самая кубанская в мире!</p>
+          </div>
+          <div class="photo__likes">
+            <svg class="photo__icon" fill="currentColor" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px"
+              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+              </g>
+            </svg>
+            <p class="photo__likes-text">Нравится: <span>4</span></p>
+          </div>
+        </article>
+
+        <article class="gallery__item photo">
+          <h2 class="visually-hidden">Pohoto5</h2>
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/photo-pov-tablet@1x.jpg, ./img/gallery/tablet/photo-pov-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/photo-pov-desktop@1x.jpg, ./img/gallery/desktop/photo-pov-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/photo-pov-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/photo-pov-mobile@2x.jpg 2x" width="280px" height="180px" alt="Cliff">
+          </picture>
+          <div class="photo__massage">
+            <p class="photo__name">Максим<span class="photo__time"> (40 часов назад)</span></p>
+            <p class="photo__text">Где снег-то?</p>
+          </div>
+          <div class="photo__likes">
+            <svg class="photo__icon" fill="currentColor" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px"
+              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+              </g>
+            </svg>
+            <p class="photo__likes-text">Нравится: <span>150</span></p>
+          </div>
+        </article>
+
+        <article class="gallery__item photo">
+          <h2 class="visually-hidden">Pohoto6</h2>
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="./img/gallery/tablet/photo-wing-tablet@1x.jpg, ./img/gallery/tablet/photo-wing-tablet@2x.jpg">
+            <source media="(min-width: 1200px)"
+              srcset="./img/gallery/desktop/photo-wing-desktop@1x.jpg, ./img/gallery/desktop/photo-wing-desktop@2x.jpg">
+            <img class="photo__image" src="./img/gallery/mobile/photo-wing-mobile@1x.jpg"
+              srcset="./img/gallery/mobile/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Wing fly">
+          </picture>
+          <div class="photo__massage">
+            <p class="photo__name">Надежда<span class="photo__time"> (45 часов назад)</span></p>
+            <p class="photo__text">Всем GM и взаимные лайки!</p>
+          </div>
+          <div class="photo__likes">
+            <svg class="photo__icon" fill="currentColor" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px"
+              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+              </g>
+            </svg>
+            <p class="photo__likes-text">Нравится: <span>2560</span></p>
+          </div>
+        </article>
+        <p class="gallery__challenge">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+    </section>
+
+    <section class="correction">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Big image</h2>
+        <picture>
+          <source media="(min-width: 660px)"
+            srcset="./img/gallery/tablet/photo-road-tablet@1x.jpg, ./img/gallery/tablet/photo-road-tablet@2x.jpg">
+          <source media="(min-width: 1200px)"
+            srcset="./img/gallery/desktop/photo-road-desktop@1x.jpg, ./img/gallery/desktop/photo-road-desktop@2x.jpg">
+          <img class="correction__image" src="./img/gallery/mobile/photo-road-mobile@1x.jpg"
+            srcset="./img/gallery/mobile/photo-road-mobile@2x.jpg 2x" width="280px" height="180px" alt="Road">
+        </picture>
+        <ul class="correction__list">
+          <li class="correction__item correction__item--crop">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44px" height="44px" viewBox="0 0 48 48"
+              enable-background="new 0 0 48 48" xml:space="preserve">
+              <path fill="none" d="M0,0h48v48H0V0z" />
+              <path
+                d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+            </svg>
+          </li>
+          <li class="correction__item correction__item--fill">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="43px" viewBox="0 0 48 48"
+              enable-background="new 0 0 48 48" xml:space="preserve">
+              <path fill="none" d="M0,0h48v48H0V0z" />
+              <path
+                d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+              <rect y="40" width="48" height="3" />
+            </svg>
+          </li>
+          <li class="correction__item correction__item--contrast">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
+              viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+              xml:space="preserve">
+              <path fill="#231F20"
+                d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+              <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+            </svg>
+          </li>
+        </ul>
+        <div class="correction__bright">
+          <label class="visually-hidden" for="points">Корректировка</label>
+          <input class="correction__range" type="range" id="points" name="points" min="0" max="10">
+        </div>
+
+        <div class="correction__posting">
+          <button class="correction__button correction__button--post">Запостить</button>
+          <button class="correction__button correction__button--cancel">Отмена</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <a class="footer__logo" href="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/svg/logo-pink-blue-desktop.svg">
+          <img src="./img/svg/logo-pink-blue-mobile.svg" width="146px" height="40px" alt="Logo Pink">
+        </picture>
+      </a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href=""></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href=""></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <b class="footer__copyright-text">Разработано:</b>
+        <a class="footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/19">HTMLAcademy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
