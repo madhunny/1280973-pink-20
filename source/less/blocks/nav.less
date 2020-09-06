@@ -68,7 +68,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
   padding: 20px 0;
 
   @media (min-width: @tablet-width) {
@@ -91,6 +90,15 @@
   background-color: unset;
   border: none;
 
+  &:hover {
+    color: @bg-red
+  }
+
+  &:active {
+    color: @bg-red;
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -112,14 +120,14 @@
   padding: 20px 0;
   box-shadow: @shadow-menu;
 
+  &--active {
+    text-decoration: underline;
+  }
+
   @media (min-width: @desktop-width) {
     padding-left: 41px;
     padding-right: 41px;
     box-shadow: none;
-
-    &:last-child {
-      // padding-right: 0;
-    }
   }
 }
 
@@ -129,4 +137,22 @@
   text-transform: @txt-upper;
   font-size: @fs-medium;
   line-height: 32px;
+
+  &:hover {
+    color: @bg-red
+  }
+
+  &:active {
+    color: @bg-red;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: none;
+    font-weight: @fw-normal;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
