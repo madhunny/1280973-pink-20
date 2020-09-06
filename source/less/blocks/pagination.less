@@ -1,0 +1,23 @@
+.pagination {
+  margin-top: 49px;
+  text-align: center;
+}
+
+.pagination__item {
+  width: 6px;
+  height: 6px;
+  background-color: @bg-dark;
+  opacity: 0.3;
+  border-radius: 50%;
+  margin-right: 19px;
+  font-size: 0;
+  padding: 0;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &--active {
+    border: @border-3dark;
+    background-color: @bg-white;
+    opacity: 1;
+  }
+}

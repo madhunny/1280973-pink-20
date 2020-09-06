@@ -2,10 +2,49 @@
   padding: 20px 0;
 }
 
+.review__wrapper {
+  position: relative;
+}
+
 .review__list {
   list-style: none;
   text-align: center;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/svg/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 79px 63px;
+    padding-top: 63px;
+    padding-left: 126px;
+    padding-right: 126px;
+  }
+}
+
+.review__item {
+  display: none;
+  margin: 0;
+  padding-bottom: 35px;
+  padding-top: 58px;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .review__text {
@@ -14,11 +53,19 @@
 
   @media (min-width: @tablet-width) {
     font-size: @fs-medium;
+    order: -1;
+
+    &:hover {
+      border-color: @border-dark;
+    }
+
+    &:active {
+      border-color: @border-red;
+    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: @fs-medium;
-    margin: 0 105px;
   }
 }
 
@@ -33,6 +80,9 @@
 
   @media (min-width: @desktop-width) {
     font-size: @fs-large;
+    margin-top: 50px;
+    margin-bottom: 17px;
+    order: 1;
   }
 }
 
@@ -46,9 +96,13 @@
 
   @media (min-width: @desktop-width) {
     font-size: @fs-medium;
+    order: 1;
+    margin: 0;
   }
 }
 
-.slider {
-  text-align: center;
+.review__toggles {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
