@@ -1,5 +1,4 @@
 .form {
-
   padding: 10px 0;
 
   @media (min-width: @tablet-width) {
@@ -13,13 +12,14 @@
       "contacts contacts"
       "adventure adventure "
       "comments comments";
+    grid-template-columns: 480px 480px;
+    grid-template-rows: auto;
 
     // display: flex;
     // flex-direction: column;
     // flex-wrap: wrap;
   }
 }
-
 
 .form__text {
   font-size: @fs-small;
@@ -47,7 +47,6 @@
   margin: 0;
 
   @media (min-width: @desktop-width) {
-
     &--name {
       grid-area: name;
     }
@@ -69,8 +68,6 @@
     }
   }
 }
-
-
 
 .form__fieldset:nth-child(2),
 .form__fieldset:nth-child(4) {
@@ -165,13 +162,10 @@
   }
 }
 
-
-
 .form__input-radio {
   width: 37px;
   height: 37px;
   background-color: @bg-red;
-
   border: @border-grey;
 
   &:hover {
