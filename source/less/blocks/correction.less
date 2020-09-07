@@ -34,24 +34,29 @@
 
 .correction__item {
   margin: 0 auto;
+  fill: @fill-grey;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: @fill-red;
+  }
 }
 
 .correction__item--crop {
-  fill: @fill-red;
   width: 44px;
   height: 44px;
 }
 
 .correction__item--fill {
-  fill: @fill-grey;
-  opacity: 0.3;
   width: 48px;
   height: 43px;
 }
 
 .correction__item--contrast {
-  fill: @fill-grey;
-  opacity: 0.3;
   width: 32px;
   height: 32px;
 }
@@ -93,10 +98,31 @@
 .correction__button--post {
   border: @border-3red;
   color: @txt-red;
+
+  &:hover {
+    background-color: @bg-red;
+    color: @txt-white;
+  }
+
+  &:active {
+    background-color: @bg-red;
+    color: @txt-white;
+    opacity: 0.3;
+  }
 }
 
 .correction__button--cancel {
   border: @border-3dark;
   color: @txt-dark;
   opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: @bg-dark;
+    color: @txt-white;
+    opacity: 0.3;
+  }
 }

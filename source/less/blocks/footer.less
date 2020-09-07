@@ -43,16 +43,16 @@
   margin: 0 auto;
 }
 
-.footer__copyright-text {
-  font-size: @fs-small;
-  line-height: @lh-small;
-  text-align: center;
-  color: @txt-dark;
-  font-weight: @fw-normal;
-  margin: 0 15px;
-}
-
 .footer__copyright-link {
-  background-image: url("../img/svg/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+  margin-left: 15px;
+  fill: @txt-red;
+
+  &:hover path {
+    fill: @txt-dark;
+  }
+
+  &:active path {
+    fill: @txt-dark;
+    opacity: 0.3;
+  }
 }

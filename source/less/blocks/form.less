@@ -1,12 +1,4 @@
 .form {
-  // display            : grid;
-  // grid-template-areas: "form__fieldset"
-  //   "form__fieldset"
-  //   "form__fieldset"
-  //   "form__fieldset"
-  //   "form__fieldset";
-  // grid-template-columns: min-content 1fr min-content;
-
 
   padding: 10px 0;
 
@@ -16,11 +8,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: "name radio"
+      "contacts contacts"
+      "adventure adventure "
+      "comments comments";
+
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
   }
 }
+
 
 .form__text {
   font-size: @fs-small;
@@ -43,11 +42,35 @@
 }
 
 .form__fieldset {
-  // grid-area: form-fieldset;
   border: none;
   padding: 20px 0;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+
+    &--name {
+      grid-area: name;
+    }
+
+    &--radio {
+      grid-area: radio;
+    }
+
+    &--contacts {
+      grid-area: contacts;
+    }
+
+    &--adventure {
+      grid-area: adventure;
+    }
+
+    &--comments {
+      grid-area: comments;
+    }
+  }
 }
+
+
 
 .form__fieldset:nth-child(2),
 .form__fieldset:nth-child(4) {
@@ -114,6 +137,14 @@
   padding: 15px 20px;
   margin-top: 10px;
 
+  &:hover {
+    border: @border-dark;
+  }
+
+  &:active {
+    border: @border-red;
+  }
+
   @media (min-width: @tablet-width) {
     width: 80%;
   }
@@ -123,11 +154,33 @@
   width: 35px;
   height: 35px;
   margin: 0;
+  border: @border-grey;
+
+  &:hover {
+    border: @border-dark;
+  }
+
+  &:active {
+    border: @border-red;
+  }
 }
+
+
 
 .form__input-radio {
   width: 37px;
-  height: 36px;
+  height: 37px;
+  background-color: @bg-red;
+
+  border: @border-grey;
+
+  &:hover {
+    border: @border-dark;
+  }
+
+  &:active {
+    border: @border-red;
+  }
 }
 
 .form__textarea {
@@ -154,6 +207,19 @@
   text-align: center;
   padding: 15px 20px;
   margin: 40px 0;
+
+  &:hover {
+    background-color: @btn-greendark;
+  }
+
+  &:active {
+    background-color: @btn-greendark;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: @btn-grey;
+  }
 }
 
 .form__comment {
