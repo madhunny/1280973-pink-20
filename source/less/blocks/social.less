@@ -15,25 +15,26 @@
 
 .social__item {
   margin: 0 8px;
-  opacity: 0.1;
-
-  &:hover {
-    opacity: none;
-  }
-
-  &:active {
-    opacity: 0.1;
-  }
 }
 
 .social__link {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  border: @border-3dark;
+  border: 3px solid fade(@fill-grey, 10%);
   width: 46px;
   height: 46px;
   border-radius: @radius;
+
+
+  &:hover {
+    border: 3px solid @fill-grey;
+    opacity: none;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__link--twitter {
