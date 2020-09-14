@@ -53,9 +53,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: baseline;
+  justify-content: space-between;
   box-shadow: @shadow-menu;
+  padding-bottom: 17px;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -68,7 +69,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 20px 0;
+  padding: 5px;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
@@ -85,10 +86,16 @@
 .nav__button {
   width: 50px;
   height: 24px;
-  background-image: url("../img/svg/icon-menu-burger.svg");
   background-repeat: no-repeat;
   background-color: unset;
+  background-position: center;
   border: none;
+  cursor: pointer;
+}
+
+.nav__button-img {
+
+  color: @bg-white;
 
   &:hover {
     color: @bg-red;
@@ -117,17 +124,19 @@
 }
 
 .nav__item {
-  padding: 20px 0;
+  padding: 16px 0;
   box-shadow: @shadow-menu;
 
-  &--active {
-    text-decoration: underline;
-  }
+
 
   @media (min-width: @desktop-width) {
     padding-left: 41px;
     padding-right: 41px;
     box-shadow: none;
+
+    &--active {
+      text-decoration: underline;
+    }
   }
 }
 

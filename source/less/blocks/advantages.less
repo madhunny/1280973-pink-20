@@ -11,16 +11,19 @@
   list-style: none;
   text-align: center;
   padding: 0;
+  margin-top: 73px;
+  margin-bottom: -3px;
 
   &::after {
     content: "";
     display: block;
     width: 100%;
-    height: 271px;
+    height: 288px;
     background-image: url("../img/advges/mobile/iphone-screen-mobile@1x.png");
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: 12px;
     background-repeat: no-repeat;
+    margin-bottom: -20px;
   }
 
   @media (min-width: @tablet-width) {
@@ -31,10 +34,11 @@
       display: block;
       position: absolute;
       width: 100%;
-      height: 488px;
-      top: 0;
+      height: 547px;
+      bottom: -66px;
       left: -42px;
       background-image: url("../img/advges/tablet/iphone-screen-3-tablet@1x.png");
+      background-size: auto;
       background-repeat: no-repeat;
       background-position-x: left;
       background-position-y: center;
@@ -75,6 +79,7 @@
   line-height: @lh-medium;
   font-weight: @fw-bold;
   color: @txt-black;
+  margin-bottom: 0;
 
   @media (min-width: @desktop-width) {
     font-size: @fs-xl;
@@ -87,6 +92,7 @@
   line-height: @lh-medium;
   font-weight: @fw-normal;
   color: @txt-dark;
+  margin-bottom: 28px;
 
   @media (min-width: @desktop-width) {
     font-size: @fs-medium;
