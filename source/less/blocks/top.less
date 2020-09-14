@@ -28,7 +28,7 @@
   font-size: @fs-large;
   line-height: @lh-large;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 22px;
 
 
   &--photo {
@@ -42,11 +42,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-right: 50%;
+    padding-right: 60%;
     font-size: @fs-xxl;
-    line-height: normal;
-    padding-top: 74px;
-    margin-bottom: 37px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 56px;
+    margin-left: 50px;
 
     &--photo {
       padding-top: 81px;
@@ -64,16 +66,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 74px;
-    padding-bottom: 104px;
+    padding-top: 105px;
     padding-right: 68%;
-    padding-left: 9%;
+    margin: 0;
     font-size: @fs-xxxl;
     line-height: normal;
 
     &--photo {
       padding-left: 20%;
       padding-right: 20%;
+      padding-top: 65px;
+      padding-bottom: 90px;
     }
 
     &--form {
@@ -102,24 +105,24 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 50%;
-    margin-bottom: 127px;
+
 
     &::before {
       background-image: url("../img/top/tablet/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
-      bottom: 0;
-      left: 50px;
+      bottom: 31px;
+      left: -20px;
       margin-bottom: 0;
-      width: 660px;
+      width: 696px;
       height: 545px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
-    padding-bottom: 50px;
+    margin: 0;
+
 
     &::before {
       background-image: url("../img/top/desktop/iphone-hand-desktop@1x.png");
@@ -129,8 +132,9 @@
       background-position-y: bottom;
       width: 720px;
       height: 645px;
-      right: -50px;
+      right: 0;
       left: auto;
+      bottom: 20px;
     }
   }
 }
@@ -160,10 +164,16 @@
     opacity: 0.3;
   }
 
+  @media (min-width: @tablet-width) {
+    width: 96%;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
     padding: 19px 15px;
-    width: 80%;
+    width: 64%;
+    line-height: 14px;
+    margin: 6px 20px;
   }
 }
 
@@ -179,20 +189,23 @@
   margin-left: 40px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 42px;
-    margin-top: 42px;
-    margin-bottom: 47px;
+    margin-top: 45px;
+    margin-bottom: 27px;
+    margin-left: 49px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 47px;
-    margin-top: 61px;
-    margin-bottom: 67px;
+    margin-top: 65px;
+    margin-bottom: 47px;
   }
 }
 
 .top__item {
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 16px;
+  }
 }
 
 .top__text {
@@ -204,7 +217,9 @@
   margin-left: 40px;
 
   @media (min-width: @tablet-width) {
-    font-size: @fs-medium;
-    padding-bottom: 119px;
+    font-size: 17px;
+    font-weight: 100;
+    padding-bottom: 145px;
+    margin-left: 16px;
   }
 }
