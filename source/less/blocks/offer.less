@@ -1,28 +1,31 @@
 .offer {
-  font-size: @fs-large;
-  font-weight: @fw-light;
-  color: @txt-dark;
-  text-align: center;
   padding-top: 34px;
   padding-bottom: 20px;
+
+  font-weight: @fw-light;
+  font-size: @fs-large;
+  text-align: center;
+  color: @txt-dark;
+
   @media (min-width: @tablet-width) {
     padding-top: 47px;
   }
+
   @media (min-width: @desktop-width) {
     padding-top: 63px;
   }
-
 }
 
 .offer__text {
   margin: 6px 0 28px;
+
   font-size: @fs-large;
   line-height: @lh-large;
 
   @media (min-width: @tablet-width) {
-    font-size: @fs-xxl;
     margin: 0;
 
+    font-size: @fs-xxl;
     line-height: normal;
   }
 
@@ -36,14 +39,14 @@
   margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
+    margin-right: 30px;
     // padding: 0 30px;
     margin-left: 30px;
-    margin-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-right: 120px;
     // padding: 0 120px;
     margin-left: 120px;
-    margin-right: 120px;
   }
 }

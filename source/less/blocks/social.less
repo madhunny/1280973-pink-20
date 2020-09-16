@@ -3,20 +3,24 @@
 }
 
 .social__list {
-  list-style: none;
   display: grid;
-  width: max-content;
-  grid-template-columns: repeat(3, 54px);
-  gap: 4px;
   // flex-direction: row;
   // flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  width: max-content;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 4px;
+  grid-template-columns: repeat(3, 54px);
+
   @media (min-width: @tablet-width) {
     gap: 8px;
   }
+
   @media (min-width: @desktop-width) {
     gap: 5px;
   }
@@ -27,17 +31,17 @@
 }
 
 .social__link {
-  display: block;
-  border: 3px solid fade(@fill-grey, 10%);
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 54px;
+  height: 54px;
+
   font-size: 0;
   color: @fill-red;
 
+  border: 3px solid fade(@fill-grey, 10%);
+  border-radius: 50%;
 
   &:hover {
     border: 3px solid @fill-grey;

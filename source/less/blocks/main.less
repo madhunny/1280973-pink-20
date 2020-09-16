@@ -1,20 +1,23 @@
 .main__text {
+  margin-top: 45px;
+  margin-bottom: 7px;
+
+  font-weight: @fw-normal;
   font-size: @fs-small;
   line-height: @lh-large;
-  font-weight: @fw-normal;
   text-align: center;
-  margin: 45px 0 7px;
 
   @media (min-width: @tablet-width) {
-    font-size: @fs-medium;
-    padding-left: 60px;
-    padding-right: 60px;
     margin-top: 90px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    font-size: @fs-medium;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 80px;
     padding-right: 80px;
+    padding-left: 80px;
   }
 }
 

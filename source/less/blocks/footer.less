@@ -1,9 +1,12 @@
 .footer {
-  grid-area: footer;
   padding: 33px 0 40px;
+
+  grid-area: footer;
+
   @media (min-width: @tablet-width) {
     padding: 30px 0;
   }
+
   @media (min-width: @desktop-width) {
     padding: 62px 0;
   }
@@ -12,9 +15,9 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -28,10 +31,11 @@
 }
 
 .footer__logo {
-  text-align: center;
   // margin-right: 30px;
   display: flex;
   margin-bottom: 38px;
+
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     margin: -18px 0 0;
@@ -42,10 +46,11 @@
   } */
 }
 
-.footer__social{
+.footer__social {
   @media (min-width: @tablet-width) {
     margin-right: 15px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: -8px;
   }
@@ -55,32 +60,37 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin: 33px 0 0;
+
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
   }
 }
 
 .footer__copyright-link {
-  margin-left: 15px;
-  font-size: 0;
-  fill: @txt-red;
-  color: @fill-red;
   position: relative;
   top: 5px;
 
+  margin-left: 15px;
+
+  font-size: 0;
+  color: @fill-red;
+
+  fill: @txt-red;
 
   &:hover path {
     fill: @txt-dark;
   }
 
   &:active path {
-    fill: @txt-dark;
     opacity: 0.3;
+
+    fill: @txt-dark;
   }
 }

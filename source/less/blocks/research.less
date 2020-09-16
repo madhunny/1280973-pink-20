@@ -1,59 +1,71 @@
 .research {
-
   display: none;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     display: block;
   }
+
   @media (min-width: @desktop-width) {
-    padding-bottom: 110px;
+    padding-bottom: 68px;
+
     background-color: @bg-grey;
     background-repeat: no-repeat;
     background-size: auto;
-    padding-bottom: 68px;
   }
 }
 
 .research__wrapper {
   position: relative;
-  // padding-left: 50%;
-  text-align: left;
-  padding-top: 54px;
+
   display: grid;
-  grid-template-columns: 238px 1fr;
-  gap: 12px 72px;
   align-items: start;
+  padding-top: 54px;
+  // padding-left: 50%;
+
+  text-align: left;
+
+  gap: 12px 72px;
+  grid-template-columns: 238px 1fr;
+
   &::before {
     content: "";
-    grid-row-end: span 4;
-    background-image: url("../img/svg/icon-timer.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+
     min-height: 345px;
+
+    background-image: url("../img/svg/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    grid-row-end: span 4;
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     gap: 10px 72px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 298px 1fr;
-    gap: 29px 71px;
     padding-top: 24px;
+
+    gap: 29px 71px;
+    grid-template-columns: 298px 1fr;
     // padding-left: 40%;
   }
 }
 
 .research__title {
+  margin: 40px 0 0;
+
+  font-weight: @fw-bold;
   font-size: @fs-xl;
   line-height: 36px;
-  font-weight: @fw-bold;
   color: @txt-black;
-  margin: 40px 0 0;
   // max-width: 175px;
 
   @media (min-width: @desktop-width) {
+    margin-top: 94px;
+
     font-size: @fs-xl;
     line-height: 1;
-    margin-top: 94px;
     /* or 100% */
     br {
       display: none;
@@ -62,25 +74,28 @@
 }
 
 .research__description {
-  font-size: @fs-small;
-  line-height: @lh-medium;
   margin: 0;
   margin-right: 10px;
 
+  font-size: @fs-small;
+  line-height: @lh-medium;
+
   @media (min-width: @desktop-width) {
-    font-size: @fs-medium;
-    line-height: @lh-large;
     // margin-top: -10px;
     margin-right: 0;
+
+    font-size: @fs-medium;
+    line-height: @lh-large;
   }
 }
 
 .research__link {
+  margin: 0 0;
+
   font-size: @fs-small;
   line-height: @lh-medium;
   color: @txt-red;
   text-decoration: underline;
-  margin: 0 0;
 
   @media (min-width: @desktop-width) {
     font-size: @fs-medium;
