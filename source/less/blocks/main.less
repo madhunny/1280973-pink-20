@@ -3,11 +3,13 @@
   line-height: @lh-large;
   font-weight: @fw-normal;
   text-align: center;
+  margin: 45px 0 7px;
 
   @media (min-width: @tablet-width) {
     font-size: @fs-medium;
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: 90px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,7 +19,7 @@
 }
 
 .main__span {
-  @media (max-width: @tablet-width) {
-    display: none;
+  @media (max-width: @tablet-width -1px) {
+    fill-size: 0;
   }
 }

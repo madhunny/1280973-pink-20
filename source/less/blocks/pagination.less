@@ -1,7 +1,11 @@
 .pagination {
+  // margin-top: 49px;
   text-align: center;
-  margin: 0;
-  padding: 7px 0;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 19px;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination__item {
@@ -10,7 +14,8 @@
   background-color: @bg-dark;
   opacity: 0.3;
   border-radius: 50%;
-  margin-right: 7px;
+  // margin-right: 19px;
+  border: none;
   font-size: 0;
   padding: 0;
   box-sizing: content-box;
@@ -25,7 +30,11 @@
   }
 
   &--active {
-    border: @border-3dark;
+    transform: scale(1.8);
+    border: 2px solid #283645;
+    height: 4px;
+    width: 4px;
+    // border: @border-3dark;
     background-color: @bg-white;
     opacity: 1;
   }

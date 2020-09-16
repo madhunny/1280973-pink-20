@@ -1,7 +1,15 @@
 .header {
   grid-area: header;
   background-color: @bg-dark;
-  background-repeat: no-repeat;
-  background-size: auto;
   color: @txt-white;
+  z-index: 4;
+  &--transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* @media (min-width: @tablet-width) {
+    */
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
