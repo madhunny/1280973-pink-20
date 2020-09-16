@@ -1,5 +1,6 @@
 .panorama {
-  padding: 10px 0;
+  padding: 10px 0 0;
+  margin-bottom: 20px;
 }
 
 .panorama__headline {
@@ -8,7 +9,7 @@
   text-align: center;
   font-weight: @fw-normal;
   color: @txt-dark;
-  margin: 56px 15px;
+  margin: 24px 15px 51px;
 
   @media (min-width: @tablet-width) {
     font-size: @fs-medium;
@@ -19,8 +20,6 @@
   @media (min-width: @desktop-width) {
     margin-left: 150px;
     margin-right: 150px;
-    margin-top: 71px;
-    margin-bottom: 89px;
   }
 }
 
@@ -56,12 +55,8 @@
 
 .panorama__massage {
   background-color: @bg-grey;
-  padding: 15px 17px;
+  padding: 17px 0 7px 17px;
   margin: 0;
-
-  @media (min-width: @desktop-width) {
-    padding: 24px 17px;
-  }
 }
 
 .panorama__name {
@@ -94,6 +89,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+
 }
 
 .panorama__icon {
@@ -106,4 +102,5 @@
   line-height: @lh-medium;
   text-transform: @txt-upper;
   color: @txt-red;
+  margin: 11px 0;
 }
