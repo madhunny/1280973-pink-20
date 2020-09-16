@@ -1,14 +1,14 @@
 .form {
   padding: 16px 0;
   display: grid;
-  @media (max-width: @tablet-width -1px) {
-    grid-template-areas:
+  grid-template-areas:
       "name"
       "adventure "
       "contacts"
       "radio"
-      "comments";
-  }
+      "comments"
+      "send";
+
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -21,7 +21,9 @@
       "name radio"
       "contacts contacts"
       "adventure adventure "
-      "comments comments";
+      "comments comments"
+      "send send";
+
     grid-template-columns: repeat(2, 50%);
     max-width: @desktop-width;
     margin: 0 auto;
@@ -374,13 +376,20 @@
 }
 
 .form__send {
+
+  padding: 22px 0 10px;
+  border: none;
+  grid-area: send;
+
+}
+
+.form__send-wrapper{
   display: grid;
   justify-content: center;
   gap: 28px;
-  padding: 22px 0 10px;
-
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     justify-content: space-between;
   }
 }
