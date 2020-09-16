@@ -1,15 +1,9 @@
 .wrapper {
-  width: @mobile-width;
+  width: 100%;
+  max-width: @desktop-width;
   margin: 0 auto;
   padding: 0 20px;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-    padding: 0 22px;
-  }
-
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }

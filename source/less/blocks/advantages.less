@@ -3,7 +3,35 @@
   background-repeat: no-repeat;
   background-size: auto;
   color: @txt-white;
-  padding: 20px 0;
+  padding: 34px 0 22px;
+  position: relative;
+  margin-top: 38px;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: @bg-grey;
+    height: 32px;
+    width: 100%;
+    bottom: 100%;
+    bottom: calc(100% - 1px);
+    left: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+  @media (min-width: @tablet-width) {
+    margin-top: 62px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    &::before {
+      height: 54px;
+    }
+  }
+  @media (min-width: 695px) {
+    margin-top: 133px;
+    padding-top: 0;
+    &::before {
+      height: 100px;
+    }
+  }
 }
 
 .advges__list {
@@ -11,33 +39,35 @@
   list-style: none;
   text-align: center;
   padding: 0;
-  margin-top: 73px;
+  // margin-top: 73px;
   margin-bottom: -3px;
+
 
   &::after {
     content: "";
     display: block;
     width: 100%;
-    height: 286px;
+    height: 288px;
     background-image: url("../img/advges/mobile/iphone-screen-mobile@1x.png");
     background-position-x: center;
-    background-position-y: 9px;
+    background-position-y: 12px;
     background-repeat: no-repeat;
     margin-bottom: -20px;
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 50%;
+    // padding-left: 50%;
+    padding-left: 310px;
     text-align: left;
-    margin-top: 69px;
 
     &::after {
       display: block;
       position: absolute;
       width: 100%;
       height: 547px;
-      bottom: -34px;
-      left: 0;
+      bottom: -52px;
+      left: 0px;
+      // right: 28.2%;
       background-image: url("../img/advges/tablet/iphone-screen-3-tablet@1x.png");
       background-size: auto;
       background-repeat: no-repeat;
@@ -47,12 +77,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     text-align: center;
     padding: 0;
     margin: 0 auto;
+    top: -96px;
+    margin-bottom: -96px;
 
     &::after {
       display: none;
@@ -71,7 +106,9 @@
 
 .advges__item {
   @media (min-width: @desktop-width) {
-    margin: 0 32px;
+    // margin: 0 32px;
+    display: grid;
+    justify-items: center;
   }
 }
 
@@ -85,6 +122,8 @@
   @media (min-width: @desktop-width) {
     font-size: @fs-xl;
     line-height: @lh-large;
+    margin-top: 57px;
+    max-width: 240px;
   }
 }
 
@@ -93,12 +132,17 @@
   line-height: @lh-medium;
   font-weight: @fw-normal;
   color: @txt-dark;
-  margin-bottom: 32px;
-  margin-top: 11px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: @fs-medium;
     line-height: @lh-large;
+    margin-top: 25px;
+    max-width: 248px;
   }
 }
 
@@ -107,8 +151,10 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    height: 302px;
+    width: auto;
+    // flex-direction: row;
+    // justify-content: flex-start;
 
     &::before {
       position: absolute;

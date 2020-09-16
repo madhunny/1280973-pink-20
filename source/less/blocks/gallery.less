@@ -3,11 +3,13 @@
 }
 
 .gallery__wrapper {
+  display: grid;
+  gap: 20px;
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
