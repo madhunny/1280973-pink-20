@@ -1,6 +1,12 @@
 .footer {
   grid-area: footer;
-  padding: 20px 0;
+  padding: 33px 0 40px;
+  @media (min-width: @tablet-width) {
+    padding: 30px 0;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 62px 0;
+  }
 }
 
 .footer__wrapper {
@@ -13,6 +19,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,16 +28,26 @@
 }
 
 .footer__logo {
-  display: block;
   text-align: center;
-  margin-right: 30px;
+  // margin-right: 30px;
+  display: flex;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 57px;
+    margin: -18px 0 0;
   }
 
+  /* @media (min-width: @desktop-width) {
+    // margin-right: 180px;
+  } */
+}
+
+.footer__social{
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+  }
   @media (min-width: @desktop-width) {
-    margin-right: 180px;
+    margin-right: -8px;
   }
 }
 
@@ -40,12 +57,23 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 auto;
+  margin: 33px 0 0;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .footer__copyright-link {
   margin-left: 15px;
+  font-size: 0;
   fill: @txt-red;
+  color: @fill-red;
+  position: relative;
+  top: 5px;
+
 
   &:hover path {
     fill: @txt-dark;
