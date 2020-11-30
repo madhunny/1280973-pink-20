@@ -9,7 +9,6 @@
 </head>
 
 <body class="page">
-
   <header class="header">
     <nav class="nav">
       <div class="wrapper nav__wrapper">
@@ -43,8 +42,8 @@
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link nav__item--active" href="./photo.html">Фотографии</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="./photo.html">Фотографии</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="./form.html">Конкурс</a>
@@ -65,6 +64,7 @@
         </h2>
       </div>
     </section>
+
     <section class="gallery">
       <div class="gallery__panorama panorama">
         <div class="wrapper">
@@ -79,7 +79,7 @@
               srcset="img/gallery/tablet/panorama-tablet@1x.jpg 1x, img/gallery/tablet/panorama-tablet@2x.jpg 2x">
             <source media="(min-width: 1200px)"
               srcset="img/gallery/desktop/panorama-desktop@1x.jpg 1x, img/gallery/desktop/panorama-desktop@2x.jpg 2x">
-            <img class="photo__image" src="img/gallery/mobile/panorama-mobile@1x.jpg"
+            <img class="panorama__image" src="img/gallery/mobile/panorama-mobile@1x.jpg"
               srcset="img/gallery/mobile/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Panorama of the day">
           </picture>
           <span class="panorama__image-text">Панорама дня</span>
@@ -99,7 +99,6 @@
           </div>
         </div>
       </div>
-
       <div class="wrapper gallery__wrapper">
         <article class="gallery__item photo">
           <h2 class="visually-hidden">Pohoto1</h2>
@@ -119,7 +118,6 @@
             <svg class="photo__icon" width="13px" height="12px" fill="currentColor">
               <use href="img/sprite.svg#like" />
             </svg>
-
             <p class="photo__likes-text">Нравится: <span>356</span></p>
           </div>
         </article>
@@ -236,7 +234,6 @@
       </div>
     </section>
 
-
     <section class="upload">
       <h2 class="visually-hidden">Добавить фото</h2>
       <p class="upload__title ">
@@ -248,8 +245,6 @@
           <img src="img/gallery/mobile/photo-road-mobile@1x.jpg" srcset="img/gallery/mobile/photo-road-mobile@2x.jpg 2x"
             width="280" height="180" alt="Фото пользователей" />
         </picture>
-
-
         <div class="upload__tools">
           <ul class="upload__list tools">
             <li class="tools__item tools__item--crop tools__item--active">
@@ -258,13 +253,10 @@
                 <svg class="tools__icon" width="44" height="44" fill="currentColor">
                   <use href="img/sprite.svg#crop" />
                 </svg>
-
               </button>
-
               <div class="tools__slidecontainer">
                 <input type="range" min="1" max="100" value="50" class="tools__slider" id="crop-range">
               </div>
-
             </li>
             <li class="tools__item tools__item--fill">
               <button class="tools__button tools__fill"><span class="visually-hidden">Заливка
@@ -280,7 +272,6 @@
             <li class="tools__item tools__item--contrast">
               <button class="tools__button tools__contrast"><span class="visually-hidden">Контраст
                   фото</span>
-
                 <svg class="tools__icon" width="44" height="44" fill="currentColor">
                   <use href="img/sprite.svg#contrast" />
                 </svg>
@@ -295,7 +286,6 @@
           <button class="upload__button upload__button--post" type="submit">Запостить</button>
           <button class="upload__button upload__button--reset" type="reset">Отмена</button>
         </div>
-      </div>
       </div>
     </section>
   </main>
