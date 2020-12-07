@@ -1,5 +1,4 @@
 .modal {
-  padding: 20px 0;
   box-shadow: @shadow-form;
   background-color: white;
   z-index: 1;
@@ -20,11 +19,10 @@
 }
 
 .modal__wrapper {
-  @media (min-width: @tablet-width) {
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 100%;
   }
 }
@@ -37,6 +35,8 @@
   color: @txt-black;
 
   @media (min-width: @tablet-width) {
+    margin: 0 35px;
+    margin-top: 49px;
     font-size: @fs-xl;
     line-height: 40px;
   }
@@ -51,21 +51,19 @@
 
   @media (min-width: @tablet-width) {
     font-size: @fs-medium;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin: 20px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 65px;
-    margin-right: 65px;
+    margin: 20px 185px;
     margin-bottom: 40px;
   }
 }
 
-.modal__button-error {
-  width: 100%;
+.modal__button {
+  width: 296px;
   background-color: @btn-green;
-  border: @border-green;
+  border: none;
   border-radius: @br-min;
   color: @txt-white;
   font-weight: @fw-bold;
@@ -74,29 +72,27 @@
   text-align: center;
   text-transform: @txt-upper;
   padding: 15px 20px;
-  margin: 30px 0;
-}
-
-.modal__button-success {
-  width: 100%;
-  background-color: @btn-green;
-  border: @border-green;
-  border-radius: @br-min;
-  color: @txt-white;
-  font-size: @fs-medium;
-  font-weight: @fw-bold;
-  line-height: @lh-large;
-  text-align: center;
-  text-transform: @txt-upper;
-  padding: 15px 20px;
-  margin: 30px 0;
+  margin: 0 auto;
 }
 
 .modal__wrapper-btn {
+  display: flex;
   background-color: @bg-grey;
+  padding: 52px 0;
+
+  &--nobg {
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+    }
+  }
 
   @media (min-width: @desktop-width) {
-    padding-top: 15px;
-    padding-bottom: 20px;
+    .modal__button {
+      width: 456px;
+    }
+
+    &--nobg {
+      background-color: @bg-grey;
+    }
   }
 }
